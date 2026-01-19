@@ -1,0 +1,1333 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <title>Gold Trading Cycles - Live</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #fbbf24;
+        }
+        .update-info {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+        .legend {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .legend-item {
+            font-size: 0.9em;
+        }
+        .legend-item strong {
+            color: #fbbf24;
+        }
+        .table-container {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 20px;
+            overflow-x: auto;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background: rgba(251,191,36,0.2);
+            padding: 15px 10px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(251,191,36,0.5);
+            color: #fbbf24;
+        }
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .disclaimer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(59,130,246,0.1);
+            border-radius: 10px;
+            font-size: 0.9em;
+            border: 1px solid rgba(59,130,246,0.3);
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .live-badge {
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            table {
+                font-size: 0.85em;
+            }
+            th, td {
+                padding: 8px 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚡ Gold Trading Cycles <span class="live-badge" style="background: #ef4444; padding: 5px 15px; border-radius: 20px; font-size: 0.4em; margin-left: 15px;">● LIVE</span></h1>
+            <div style="font-size: 1.2em; margin: 10px 0; color: #10b981;">⚡ Instant Updates • 1-4s Delay</div>
+            <div class="update-info">
+                Last Updated: 2026-01-19 16:28:01<br>
+                ⟳ Auto-refresh every 3 seconds | Showing last 50 cycles
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item"><strong>Price:</strong> Current gold price (USD)</div>
+            <div class="legend-item"><strong>EMA:</strong> Trend direction (Bullish/Bearish)</div>
+            <div class="legend-item"><strong>RSI:</strong> Momentum (0-100)</div>
+            <div class="legend-item"><strong>ADX:</strong> Trend strength</div>
+            <div class="legend-item"><strong>Bar:</strong> Bar size (OK = large enough)</div>
+            <div class="legend-item"><strong>ATR:</strong> Volatility measure</div>
+            <div class="legend-item"><strong>Pos:</strong> Open positions (0 or 1)</div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Price</th>
+                        <th>EMA Trend</th>
+                        <th>RSI</th>
+                        <th>ADX</th>
+                        <th>Bar Size</th>
+                        <th>ATR</th>
+                        <th>Pos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:58</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4665.06</td>
+            <td style="color: #10b981; font-weight: bold;">
+                BULLISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(12.3p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>54.6</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>20.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                44p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>137p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:57</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4665.59</td>
+            <td style="color: #10b981; font-weight: bold;">
+                BULLISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(18.3p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>51.8</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>20.8</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                25p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>141p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:56</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4665.78</td>
+            <td style="color: #10b981; font-weight: bold;">
+                BULLISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(20.0p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>54.7</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>21.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                75p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>149p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:55</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4666.59</td>
+            <td style="color: #10b981; font-weight: bold;">
+                BULLISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(18.1p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>64.4</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">SELL OK</span>
+            </td>
+            <td>
+                <strong>22.2</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                91p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>150p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:54</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4665.67</td>
+            <td style="color: #10b981; font-weight: bold;">
+                BULLISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(3.7p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>61.2</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">SELL OK</span>
+            </td>
+            <td>
+                <strong>24.3</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                25p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>150p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:53</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4665.86</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(2.0p)</span>
+            </td>
+            <td style="color: #ef4444;">
+                <strong>81.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERBOUGHT</span>
+            </td>
+            <td>
+                <strong>27.0</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                41p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>157p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:52</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4666.36</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(13.6p)</span>
+            </td>
+            <td style="color: #ef4444;">
+                <strong>87.8</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERBOUGHT</span>
+            </td>
+            <td>
+                <strong>29.3</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                156p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>160p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:51</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4664.71</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(35.1p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>63.2</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">SELL OK</span>
+            </td>
+            <td>
+                <strong>33.2</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                67p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>154p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:50</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4665.45</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(41.1p)</span>
+            </td>
+            <td style="color: #ef4444;">
+                <strong>74.4</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERBOUGHT</span>
+            </td>
+            <td>
+                <strong>35.7</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                0p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>155p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:49</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4665.36</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(58.2p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>62.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">SELL OK</span>
+            </td>
+            <td>
+                <strong>37.2</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                8p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>157p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:48</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4665.44</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(80.1p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>59.7</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">SELL OK</span>
+            </td>
+            <td>
+                <strong>37.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                63p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>157p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:47</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4664.84</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(109.5p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>49.7</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>36.8</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                290p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>156p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:46</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4661.96</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(137.8p)</span>
+            </td>
+            <td style="color: #10b981;">
+                <strong>15.6</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERSOLD</span>
+            </td>
+            <td>
+                <strong>35.6</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                30p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>146p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:45</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4661.67</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(131.4p)</span>
+            </td>
+            <td style="color: #10b981;">
+                <strong>24.6</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERSOLD</span>
+            </td>
+            <td>
+                <strong>35.2</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                149p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>140p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:44</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4663.08</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(114.7p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>34.2</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">NEUTRAL</span>
+            </td>
+            <td>
+                <strong>34.6</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                72p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>136p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:43</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4662.36</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(110.1p)</span>
+            </td>
+            <td style="color: #10b981;">
+                <strong>22.1</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERSOLD</span>
+            </td>
+            <td>
+                <strong>33.0</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                117p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>147p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:42</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4663.67</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(90.5p)</span>
+            </td>
+            <td style="color: #10b981;">
+                <strong>23.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERSOLD</span>
+            </td>
+            <td>
+                <strong>30.9</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                42p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>141p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:41</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4663.95</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(77.9p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>30.3</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">NEUTRAL</span>
+            </td>
+            <td>
+                <strong>30.4</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                89p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>139p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:40</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4664.84</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(64.6p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>34.4</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">NEUTRAL</span>
+            </td>
+            <td>
+                <strong>30.9</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                155p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>136p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:39</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4666.39</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(57.3p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>63.9</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">SELL OK</span>
+            </td>
+            <td>
+                <strong>32.1</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                108p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>131p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:38</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4665.30</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(68.2p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>57.6</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>33.1</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                29p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>124p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:37</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4665.05</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(65.9p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>42.2</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>32.4</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                79p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>128p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:36</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4665.81</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(56.8p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>31.4</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">NEUTRAL</span>
+            </td>
+            <td>
+                <strong>32.2</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                82p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>126p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:35</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4666.64</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(54.0p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>38.6</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">NEUTRAL</span>
+            </td>
+            <td>
+                <strong>32.6</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                39p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>125p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:34</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4666.25</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(60.8p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>33.2</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">NEUTRAL</span>
+            </td>
+            <td>
+                <strong>34.1</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                18p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>136p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:33</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4666.42</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(62.8p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>33.0</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">NEUTRAL</span>
+            </td>
+            <td>
+                <strong>36.1</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                145p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>133p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:32</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4664.98</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(66.7p)</span>
+            </td>
+            <td style="color: #10b981;">
+                <strong>19.0</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERSOLD</span>
+            </td>
+            <td>
+                <strong>38.6</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                35p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>124p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:31</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4664.68</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(49.7p)</span>
+            </td>
+            <td style="color: #10b981;">
+                <strong>11.9</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERSOLD</span>
+            </td>
+            <td>
+                <strong>40.3</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                116p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>123p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:30</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4665.67</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(20.0p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>33.8</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">NEUTRAL</span>
+            </td>
+            <td>
+                <strong>43.0</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                254p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>117p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:29</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4668.33</td>
+            <td style="color: #10b981; font-weight: bold;">
+                BULLISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(4.9p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>67.9</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">SELL OK</span>
+            </td>
+            <td>
+                <strong>46.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                29p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>117p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:28</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4668.05</td>
+            <td style="color: #10b981; font-weight: bold;">
+                BULLISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(2.3p)</span>
+            </td>
+            <td style="color: #ef4444;">
+                <strong>71.1</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERBOUGHT</span>
+            </td>
+            <td>
+                <strong>48.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                26p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>136p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:27</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4668.32</td>
+            <td style="color: #10b981; font-weight: bold;">
+                BULLISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(2.9p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>61.0</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">SELL OK</span>
+            </td>
+            <td>
+                <strong>47.0</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                22p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>133p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:26</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4668.55</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(0.1p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>62.3</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">SELL OK</span>
+            </td>
+            <td>
+                <strong>44.7</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                34p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>135p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:25</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4667.88</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(7.4p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>57.2</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>41.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                50p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>132p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:24</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4668.90</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(12.4p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>50.1</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>38.0</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                117p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>132p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:23</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4667.54</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(26.3p)</span>
+            </td>
+            <td style="color: #10b981;">
+                <strong>27.9</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERSOLD</span>
+            </td>
+            <td>
+                <strong>34.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                27p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>126p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:22</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4667.26</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(27.7p)</span>
+            </td>
+            <td style="color: #10b981;">
+                <strong>14.8</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERSOLD</span>
+            </td>
+            <td>
+                <strong>32.1</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                64p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>123p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:21</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4666.64</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(25.2p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>44.2</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>30.0</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                82p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>123p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:20</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4667.60</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(11.8p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>48.8</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>28.8</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                14p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>110p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:19</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4667.65</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(4.9p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>52.4</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>28.7</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                9p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>113p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:18</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4667.65</td>
+            <td style="color: #10b981; font-weight: bold;">
+                BULLISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(2.7p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>50.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>30.1</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                101p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>113p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:17</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4668.50</td>
+            <td style="color: #10b981; font-weight: bold;">
+                BULLISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(11.9p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>56.7</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>31.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                28p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>114p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:16</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4668.98</td>
+            <td style="color: #10b981; font-weight: bold;">
+                BULLISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(9.6p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>52.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>33.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                128p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>111p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:15</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4670.52</td>
+            <td style="color: #10b981; font-weight: bold;">
+                BULLISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(2.3p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>69.9</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">SELL OK</span>
+            </td>
+            <td>
+                <strong>35.1</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #10b981;">
+                288p
+                <span style="font-weight: bold; margin-left: 5px;">OK</span>
+            </td>
+            <td>102p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:14</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4667.24</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(26.7p)</span>
+            </td>
+            <td style="color: #10b981;">
+                <strong>26.4</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERSOLD</span>
+            </td>
+            <td>
+                <strong>38.0</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                21p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>85p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:13</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4667.68</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(24.3p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>42.5</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>42.9</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                29p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>86p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:12</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4667.30</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(23.5p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>48.0</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>47.8</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                32p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>89p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:11</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4667.63</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(17.5p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>54.8</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">BUY ZONE</span>
+            </td>
+            <td>
+                <strong>50.8</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                32p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>90p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: rgba(255,255,255,0.05);">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:10</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4667.95</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(13.3p)</span>
+            </td>
+            <td style="color: #6b7280;">
+                <strong>58.7</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">SELL OK</span>
+            </td>
+            <td>
+                <strong>51.9</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                72p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>89p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+        <tr style="background: transparent;">
+            <td style="font-size: 0.85em; opacity: 0.8;">12:09</td>
+            <td style="font-weight: bold; color: #fbbf24;">$4668.67</td>
+            <td style="color: #ef4444; font-weight: bold;">
+                BEARISH
+                <span style="opacity: 0.7; font-size: 0.9em;">(11.9p)</span>
+            </td>
+            <td style="color: #ef4444;">
+                <strong>78.0</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">OVERBOUGHT</span>
+            </td>
+            <td>
+                <strong>53.6</strong>
+                <br><span style="font-size: 0.8em; opacity: 0.7;">STRONG</span>
+            </td>
+            <td style="color: #6b7280;">
+                47p
+                <span style="font-weight: bold; margin-left: 5px;">NO</span>
+            </td>
+            <td>92p</td>
+            <td style="color: #6b7280; font-weight: bold; font-size: 1.2em;">0</td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+
+        <div class="disclaimer">
+            <strong>📊 INSTANT LIVE MARKET ANALYSIS</strong><br>
+            Real-time cycles (refreshes every 3s, checks every 1s) • New cycles appear within 1-4 seconds<br>
+            No account information, balance, equity, or P&L displayed • For educational purposes only • Not financial advice
+        </div>
+    </div>
+    <script>
+        // Force hard refresh every 3 seconds with cache busting
+        setTimeout(function(){
+            // Add timestamp to force new request
+            var currentUrl = window.location.href.split('?')[0];
+            window.location.href = currentUrl + '?t=' + new Date().getTime();
+        }, 3000);
+
+        // Disable browser caching on back button
+        window.onload = function() {
+            if (performance.navigation.type == 2) {
+                var currentUrl = window.location.href.split('?')[0];
+                window.location.href = currentUrl + '?t=' + new Date().getTime();
+            }
+        };
+
+        // Visual indicator that page is live
+        document.title = '🔴 LIVE - Gold Trading Cycles';
+    </script>
+</body>
+</html>
